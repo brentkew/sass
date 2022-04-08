@@ -1,6 +1,6 @@
 # sass
 * [Introduction](#Introduction)
-* [Why to Use SASS](#why-to-use-sass)
+* [Why to Use SASS](#why-to-use-SASS)
 * [SASS Variables](#sass-variables)
 * [SASS Variable Scope](#sass-variable-scope)
 
