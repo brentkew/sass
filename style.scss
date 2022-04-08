@@ -1,0 +1,19 @@
+@import "colors";
+@import "reset";
+
+$myFont: Helvetica, sans-serif;
+$containerWidth: 300px;
+$bodyFontSize: 12px;
+
+body {
+  font-family: $myFont;
+  font-size: $bodyFontSize;
+  background-color: $themeColor;
+}
+header {
+  background-color: $mainColor;
+  border-bottom: $borderColor;
+}
+footer {
+  background-color: $secondaryColor;
+}
