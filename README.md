@@ -1,5 +1,11 @@
 # sass
+* [Introduction](#Introduction)
+* [Why to Use SASS](#why-to-use-sass)
+* [SASS Variables](#sass-variables)
+* [SASS Variable Scope](#sass-variable-scope)
 
+
+## Introduction
 SASS stand for (Syntactically Awesome Stylesheet) is a CSS per-processor,
 which helps to reduce repetition in CSS.
 
@@ -82,3 +88,7 @@ footer {
     color: green;
 }
 ```
+
+**Global variables should be defined outside any rules, it should be good
+practice to defined all global variables in saperate file like _global.scss and 
+inclued the file with @include keyword**
