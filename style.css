@@ -20,4 +20,52 @@ header {
 footer {
   background-color: red;
 }
+
+.heading {
+  color: red;
+}
+
+.heading h2 {
+  color: green;
+}
+
+.atIfDirective p {
+  border: 5px solid #3b3b3b;
+  font-size: 30px;
+}
+
+.ifElseDirective p {
+  font-size: 32px;
+  color: green;
+}
+
+.success {
+  color: green;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.danger {
+  color: red;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.button-basic, .danger-button, .success-button {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.danger-button {
+  background-color: red;
+  color: white;
+}
+
+.success-button {
+  background-color: green;
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */

@@ -17,3 +17,66 @@ header {
 footer {
   background-color: $secondaryColor;
 }
+$variable1: 1;
+$variable2: 1;
+.heading {
+  color: red;
+  h2 {
+    color: if($variable1 + $variable2 == 2, green, red);
+  }
+}
+
+.atIfDirective {
+  p {
+    @if $variable1 + $variable2 == 2 {
+      border: 5px solid #3b3b3b;
+      font-size: 30px;
+    }
+  }
+}
+
+$authorType: "editor";
+.ifElseDirective {
+  p {
+    font-size: 32px;
+    @if $authorType == "editor" {
+      color: green;
+    } @else if $authorType == "admin" {
+      color: blue;
+    } @else {
+      color: red;
+    }
+  }
+}
+
+@mixin notification($notifColor) {
+  color: $notifColor;
+  font-size: 24px;
+  font-weight: bold;
+}
+.success {
+  @include notification(green);
+}
+.danger {
+  @include notification(red);
+}
+
+.button-basic {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.danger-button {
+  @extend .button-basic;
+  background-color: red;
+  color: white;
+}
+
+.success-button {
+  @extend .button-basic;
+  background-color: green;
+  color: white;
+}
